@@ -2,22 +2,21 @@
   'use strict'
 
   function hex2ascii (hex) {
-    let str = ''
-
     if (!(typeof hex === 'number' || typeof hex == 'string')) {
-      return str
+      return ''
     }
 
     hex = hex.toString().replace(/\s+/gi, '')
+    const stack = []
 
     for (let i = 0; i < hex.length; i += 2) {
-      let n = parseInt(hex.substr(i, 2), 16)
-      if (!isNaN(n) && n !== 0) {
-        str += String.fromCharCode(n)
+      const code = parseInt(hex.substr(i, 2), 16)
+      if (!isNaN(code) && code !== 0) {
+        stack.push(String.fromCharCode(code))
       }
     }
 
-    return str
+    return stack.join('')
   }
 
   if (typeof exports !== 'undefined') {

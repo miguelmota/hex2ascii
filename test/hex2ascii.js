@@ -2,7 +2,7 @@ var test = require('tape');
 var hex2ascii = require('../hex2ascii');
 
 test('hex2ascii', function (t) {
-  t.plan(11)
+  t.plan(10)
 
   t.equal(hex2ascii(''), '')
   t.equal(hex2ascii({}), '')
