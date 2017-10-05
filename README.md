@@ -10,7 +10,7 @@ npm install hex2ascii
 
 # Docs
 
-- **hex2ascii**(string hex)
+- **hex2ascii**(hex)
 
     - {string} hex - required hex string
 
