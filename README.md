@@ -1,6 +1,6 @@
 # hex2ascii
 
-> Convert hex to ascii
+> Convert hex to ascii in JavaScript.
 
 # Install
 
@@ -10,7 +10,9 @@ npm install hex2ascii
 
 # Docs
 
-**hex2ascii**(string hex)
+- **hex2ascii**(string hex)
+
+    - {string} hex - required hex string
 
 # Usage
 
