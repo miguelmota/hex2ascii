@@ -9,7 +9,7 @@
     hex = hex.toString().replace(/\s+/gi, '')
     const stack = []
 
-    for (let i = 0; i < hex.length; i += 2) {
+    for (var i = 0; i < hex.length; i += 2) {
       const code = parseInt(hex.substr(i, 2), 16)
       if (!isNaN(code) && code !== 0) {
         stack.push(String.fromCharCode(code))
@@ -31,4 +31,4 @@
   } else {
     root.hex2ascii = hex2ascii
   }
-})(this);
+})(typeof window !== 'undefined' ? window : this);

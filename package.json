@@ -1,6 +1,6 @@
 {
   "name": "hex2ascii",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert hex to ascii.",
   "main": "hex2ascii.js",
   "scripts": {
